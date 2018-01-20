@@ -2,15 +2,55 @@
 <html lang="en">
   <head>
     <title>Financial Calculator</title>
-    <link href="/styles/main.css" rel="stylesheet" type="text/css">
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <header>
-
+      <h1>Financial Calculator</h1>
     </header>
-
+    <form>
+      <input id="marginal" type="text" placeholder="Current Marginal Tax Rate" required>
+      <input id="avg-tax" type="text" placeholder="Avg Tax Rate in Retirement" required>
+      <input id="deposit" type="text" placeholder="Amount of Deposit" required>
+      <input id="years-invested" type="text" placeholder="Years Invested" required>
+      <input id="roi" type="text" placeholder="Return on Investment" required>
+      <input id="inflation" type="text" placeholder="Inflation Rate" required>
+      <button>Submit!</button>
+    </form>
+    <table>
+      <tr>
+        <th></th>
+        <th>Option 1: TFSA</th>
+        <th>Option 2: RRSP</th>
+        <th>Option 3: Both</th>
+      </tr>
+      <tr>
+        <td>Total Deposit</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Future Value</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Future Tax Paid</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>After Tax Future Value</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="/scripts/app.js"></script>
+    <script src="scripts/app.js"></script>
   </body>
 </html>
